@@ -4,6 +4,39 @@ xmlns:x="urn:schemas-microsoft-com:office:excel"
 xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raniganj Urdu High School</title>
+    <style>
+        /* Optional styling */
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        #content { display: none; }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Raniganj Urdu High School</h1>
+        <p>Welcome to My Web...</p>
+    </div>
+
+    <script>
+        // Admin credentials (hardcoded for simplicity)
+        const adminId = "admin";
+        const adminPassword = "password123"; // Change this to your desired password
+
+        // Prompt for login
+        let userId = prompt("Enter Admin ID:");
+        let userPassword = prompt("Enter Password:");
+
+        // Check credentials
+        if (userId === adminId && userPassword === adminPassword) {
+            document.getElementById("content").style.display = "block"; // Show content
+        } else {
+            alert("Incorrect ID or Password. Access Denied.");
+            window.location.href = "about:blank"; // Redirect to blank page on failure
+        }
+    </script>
+</body>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=ProgId content=Excel.Sheet>
 <meta name=Generator content="Microsoft Excel 15">
